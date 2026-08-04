@@ -1,4 +1,8 @@
-# Simple Profile Card
+## Simple Profile Card
+
+![Website screenshot](./public/output.png)
+
+# About
 
 This project is a small React app that shows a basic user profile card using static information. It is not a big app or a fancy system — it is just a simple page made to practice UI design, component structure, and styling.
 
@@ -32,15 +36,6 @@ The project is meant to practice:
 - using components from Ant Design
 - creating reusable UI elements
 - making static content feel more interactive with hover states
-
-## How to run
-
-```bash
-npm install
-npm start
-```
-
-Then open the app in your browser.
 
 ## Notes
 
