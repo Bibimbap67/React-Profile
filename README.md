@@ -1,7 +1,7 @@
 <h2 align="center">Simple Profile Card</h2>
 
 <p align="center">
-  <img src="./public/output.png" alt="Website screenshot" width="900" />
+  <img src="./public/output.png" alt="Website screenshot" width="600" />
 </p>
 
 <h1 align="center">About</h1>
