@@ -1,8 +1,10 @@
-## Simple Profile Card
+<h2 align="center">Simple Profile Card</h2>
 
-![Website screenshot](./public/output.png)
+<p align="center">
+  <img src="./public/output.png" alt="Website screenshot" width="900" />
+</p>
 
-# About
+<h1 align="center">About</h1>
 
 This project is a small React app that shows a basic user profile card using static information. It is not a big app or a fancy system — it is just a simple page made to practice UI design, component structure, and styling.
 
