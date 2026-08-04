@@ -62,8 +62,8 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
           count={
             <span
               style={{
-                width: 18,
-                height: 18,
+                width: 16,
+                height: 16,
                 backgroundColor: "#52c41a",
                 borderRadius: "50%",
                 display: "inline-block",

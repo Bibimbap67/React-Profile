@@ -6,6 +6,7 @@ import { JavaOutlined } from "@ant-design/icons";
 import yeji from "./assets/yeji.png";
 import yunjin from "./assets/funny-yunjin.gif";
 import speed from "./assets/speed.gif";
+import winter from "./assets/winter.png"
 import Information from "./components/information";
 
 
@@ -21,10 +22,10 @@ function App() {
 
   return (
     <Information
-    name="Mark lester M. Panolin"
-    role="BSIT Students"
-    bio={"I love making simple things complicated, and complicated things to simple lol. \n– Bibimbap"}
-    profileImage={yunjin}
+    name="김민정"
+    role="AESPA - Vocals"
+    bio={"나는 쉬운 걸 어렵게 만들고, 어려운 걸 쉽게 만드는 걸 좋아해 ㅋㅋ\n– Bibimbap"}
+    profileImage={winter}
     skills={techStack}
     />
   );
