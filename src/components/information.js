@@ -32,7 +32,10 @@ function SocialButton({ icon, color, gradient, href }) {
   );
 }
 
-function ProfileCard({ name, role, bio, profileImage, skills }) {
+function ProfileCard({ name, role, bio, profileImage, hoverImage, skills }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const avatarSrc = hoverImage && isHovered ? hoverImage : profileImage;
+
   return (
     <>
       <style>{`
@@ -148,6 +151,8 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
               position: "relative",
               display: "inline-flex",
             }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
             <div
               style={{
@@ -158,13 +163,23 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                transform: isHovered ? "scale(1.06)" : "scale(1)",
+                boxShadow: isHovered
+                  ? "0 12px 20px rgba(98, 40, 215, 0.2)"
+                  : "none",
               }}
             >
               <Avatar
                 className="profile-avatar"
                 size={165}
-                src={profileImage}
-                style={{ border: "4px solid white" }}
+                src={avatarSrc}
+                style={{
+                  border: "4px solid white",
+                  transition: "all 0.35s ease-in-out",
+                  transform: isHovered ? "scale(1.02)" : "scale(1)",
+                  objectFit: "cover",
+                }}
               />
             </div>
             <span

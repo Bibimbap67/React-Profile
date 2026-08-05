@@ -4,6 +4,7 @@ import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiAndroidstudio } from "react-icons/si";
 import { JavaOutlined } from "@ant-design/icons";
 import winter from "./assets/winter.png";
+import scuba from "./assets/winter-scuba.gif";
 import Information from "./components/information";
 
 
@@ -23,6 +24,7 @@ function App() {
       role="AESPA - Vocals"
       bio={"나는 쉬운 걸 어렵게 만들고, 어려운 걸 쉽게 만드는 걸 좋아해 ㅋㅋ\n– Bibimbap"}
       profileImage={winter}
+      hoverImage={scuba}
       skills={techStack}
     />
   );
