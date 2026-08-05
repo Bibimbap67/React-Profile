@@ -34,29 +34,102 @@ function SocialButton({ icon, color, gradient, href }) {
 
 function ProfileCard({ name, role, bio, profileImage, skills }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-        padding: "24px 16px",
-        boxSizing: "border-box",
-      }}
-    >
-      <Card
-        variant="borderless"
-        style={{ width: 480, textAlign: "center", borderRadius: 30 }}
-        styles={{
-          body: {
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "40px 20px",
-          },
+    <>
+      <style>{`
+        @media (max-width: 480px) {
+          .profile-card-shell {
+            padding: 12px !important;
+          }
+
+          .profile-card {
+            width: 100% !important;
+            max-width: 360px !important;
+            border-radius: 22px !important;
+          }
+
+          .profile-card .ant-card-body {
+            padding: 28px 14px 18px !important;
+          }
+
+          .profile-avatar {
+            width: 120px !important;
+            height: 120px !important;
+          }
+
+          .profile-name {
+            font-size: 24px !important;
+            margin-top: 10px !important;
+          }
+
+          .profile-role {
+            font-size: 14px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .profile-bio {
+            font-size: 14px !important;
+            max-width: 260px !important;
+            line-height: 1.5 !important;
+          }
+
+          .profile-skills {
+            max-width: 280px !important;
+            gap: 8px 6px !important;
+            padding: 6px !important;
+          }
+
+          .profile-skill {
+            font-size: 12px !important;
+            padding: 5px 8px !important;
+            min-width: 0 !important;
+          }
+
+          .profile-skill > span {
+            gap: 4px !important;
+            justify-content: center !important;
+          }
+
+          .profile-socials {
+            gap: 12px !important;
+            padding: 8px !important;
+          }
+
+          .profile-socials a {
+            display: inline-flex !important;
+          }
+
+          .profile-socials button {
+            width: 42px !important;
+            height: 42px !important;
+            font-size: 20px !important;
+          }
+        }
+      `}</style>
+      <div
+        className="profile-card-shell"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          padding: "24px 16px",
+          boxSizing: "border-box",
         }}
       >
+        <Card
+          className="profile-card"
+          variant="borderless"
+          style={{ width: 480, maxWidth: "100%", textAlign: "center", borderRadius: 30 }}
+          styles={{
+            body: {
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "40px 20px",
+            },
+          }}
+        >
         <Badge
           offset={[-30, 150]}
           count={
@@ -85,6 +158,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
             }}
           >
             <Avatar
+              className="profile-avatar"
               size={165}
               src={profileImage}
               style={{ border: "4px solid white" }}
@@ -93,6 +167,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
         </Badge>
 
         <h1
+          className="profile-name"
           style={{
             margin: "13px 0 -3px 0",
             fontWeight: "bold",
@@ -103,6 +178,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
         </h1>
 
         <h2
+          className="profile-role"
           style={{
             margin: "0 0 10px 0",
             fontWeight: "bold",
@@ -114,6 +190,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
         </h2>
 
         <p
+          className="profile-bio"
           style={{
             margin: "0 0 13px 0",
             fontSize: "17px",
@@ -131,6 +208,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
         </p>
 
         <div
+          className="profile-skills"
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -144,10 +222,10 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
             const fadedColor = skill.color + "15";
             const fadedColorText = skill.color + "99";
 
-
             return (
               <Tag
                 key={skill.name}
+                className="profile-skill"
                 variant="filled"
                 style={{
                   borderRadius: "999px",
@@ -177,7 +255,9 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
+                    justifyContent: "center",
                     gap: "6px",
+                    whiteSpace: "nowrap",
                   }}
                 >
                   {skill.icon}
@@ -189,9 +269,11 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
         </div>
 
         <div
+          className="profile-socials"
           style={{
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             gap: "20px",
             padding: "10px",
           }}
@@ -212,8 +294,9 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
             color="#5865f2"
           />
         </div>
-      </Card>
-    </div>
+        </Card>
+      </div>
+    </>
   );
 }
 
