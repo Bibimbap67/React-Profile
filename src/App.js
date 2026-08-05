@@ -3,11 +3,8 @@ import React, { useState } from "react";
 import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiAndroidstudio } from "react-icons/si";
 import { JavaOutlined } from "@ant-design/icons";
-import yeji from "./assets/yeji.png";
-import yunjin from "./assets/funny-yunjin.gif";
-import speed from "./assets/speed.gif";
 import winter from "./assets/winter.png"
-import Information from "./components/information";
+import Information from "./components/Information";
 
 
 

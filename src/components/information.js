@@ -197,7 +197,7 @@ function ProfileCard({ name, role, bio, profileImage, skills }) {
           }}
         >
           <SocialButton
-            href="https://github.com/Bibimbap67"
+            href="https://github.com/Bibimbap67/React-Profile"
             icon={<GithubFilled />}
             color="#24292f"
           />
