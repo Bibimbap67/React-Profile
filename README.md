@@ -6,7 +6,7 @@
 
 <h1 align="center">About</h1>
 
-This project is a small React app that shows a basic user profile card using static information. It is not a big app or a fancy system — it is just a simple page made to practice UI design, component structure, and styling.
+This project is a small React app that shows a basic user profile card using static information. 
 
 The goal was to make a profile look more alive even though the content itself is static. The design starts simple, then gets a little more interesting with hover effects, soft animations, and colorful tags.
 

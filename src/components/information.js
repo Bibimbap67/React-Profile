@@ -10,7 +10,7 @@ function SocialButton({ icon, color, gradient, href }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" rel="noopener noreferrer">
       <Button
         type={hovered ? "primary" : "default"}
         shape="circle"
