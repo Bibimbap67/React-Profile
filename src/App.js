@@ -4,7 +4,7 @@ import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiAndroidstudio } from "react-icons/si";
 import { JavaOutlined } from "@ant-design/icons";
 import winter from "./assets/winter.png";
-import Information from "./components/Information";
+import Information from "./components/information";
 
 
 
