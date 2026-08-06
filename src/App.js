@@ -6,6 +6,7 @@ import { JavaOutlined } from "@ant-design/icons";
 import winter from "./assets/winter.png";
 import scuba from "./assets/winter-scuba.gif";
 import Information from "./components/information";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
