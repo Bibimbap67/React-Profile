@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
+
   const techStack = [
     { icon: <FaReact />, name: "React", color: "#0f1bc9" },
     { icon: <JavaOutlined />, name: "JavaScript", color: "#ef770e" },
@@ -29,6 +30,9 @@ function App() {
       skills={techStack}
     />
   );
+
+  <Analytics/>
 }
+
 
 export default App;
