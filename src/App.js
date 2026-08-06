@@ -21,17 +21,18 @@ function App() {
   ];
 
   return (
-    <Information
-      name="김민정"
-      role="AESPA - Vocals"
-      bio={"나는 쉬운 걸 어렵게 만들고, 어려운 걸 쉽게 만드는 걸 좋아해 ㅋㅋ\n– Bibimbap"}
-      profileImage={winter}
-      hoverImage={scuba}
-      skills={techStack}
-    />
+    <>
+      <Information
+        name="김민정"
+        role="AESPA - Vocals"
+        bio={"나는 쉬운 걸 어렵게 만들고, 어려운 걸 쉽게 만드는 걸 좋아해 ㅋㅋ\n– Bibimbap"}
+        profileImage={winter}
+        hoverImage={scuba}
+        skills={techStack}
+      />
+      <Analytics />
+    </>
   );
-
-  <Analytics/>
 }
 
 
